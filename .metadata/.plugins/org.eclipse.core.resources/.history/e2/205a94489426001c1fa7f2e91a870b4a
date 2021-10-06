@@ -1,0 +1,21 @@
+package application;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		double randomNumber = 0.0;
+		int lenghtIndex = 4;
+		int count = 0;
+		
+		for (int i = 1; i <= lenghtIndex; i++) {
+			System.out.print("Digite um número: ");
+			randomNumber = sc.nextDouble();
+		}
+
+	}
+
+}

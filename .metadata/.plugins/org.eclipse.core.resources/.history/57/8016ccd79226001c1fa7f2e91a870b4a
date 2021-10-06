@@ -1,0 +1,39 @@
+package application;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		int count = 0;
+		
+		for (int i = 1; i <= 20; i++) {
+			
+			System.out.println("Digite aqui uma idade: ");
+			int age = sc.nextInt();
+			
+			sc.nextLine();
+			
+			if (age < 0 || age == 0) {
+				System.out.println("Idade inválida!");
+				break;
+			}
+			
+			else if (age >= 18) {
+				count += 1;
+			}
+			
+			else {
+				System.out.print("Erro");
+			}
+		}
+		
+		System.out.printf("Soma das idades: %d", sumAge);
+		
+		sc.close();
+	}
+
+}

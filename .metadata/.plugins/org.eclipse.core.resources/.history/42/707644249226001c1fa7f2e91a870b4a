@@ -1,0 +1,38 @@
+package application;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		int sumAge = 0;
+		int lenghtIndex = 4;
+		double avgSumAge = 0;
+		
+		for (int i = 1; i <= lenghtIndex; i++) {
+			
+			System.out.println("Digite aqui uma idade: ");
+			int age = sc.nextInt();
+			
+			sc.nextLine();
+			
+			if (age < 0 || age == 0) {
+				System.out.println("Idade inválida!");
+			}
+			else {
+				sumAge += age;
+				continue;
+			}
+		}
+		
+		avgSumAge = sumAge / 20;
+		
+		System.out.printf("Média das idades: %.2f", avgSumAge);
+		
+		sc.close();
+	}
+
+}

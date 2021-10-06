@@ -35,9 +35,6 @@ public class Program {
 				System.out.println(j + " Nome: " + randomName + " | " + "número arredondado: " + randomNumber);
 			}
 		}
-
-		
-
 		sc.close();
 	}
 
