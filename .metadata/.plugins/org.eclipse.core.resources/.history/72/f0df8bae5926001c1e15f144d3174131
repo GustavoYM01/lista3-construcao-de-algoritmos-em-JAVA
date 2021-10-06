@@ -1,0 +1,29 @@
+package application;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		double randomNumber = 0.0;
+
+		System.out.print("number: ");
+		randomNumber = sc.nextDouble();
+
+//		double result = Math.floor(randomNumber);
+
+		System.out.println("Number: " + result);
+
+//		printDecimal(102.32, 2);
+
+	}
+
+	public static void printDecimal(double x, int n) {
+		double p = Math.pow(10.0, n);
+		int dec = (int) (x * p - ((int) x) * p);
+		System.out.println(dec / p);
+	}
+
+}

@@ -1,0 +1,15 @@
+package application;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		double randomNumber = 0.0;
+		
+		System.out.print("Digite o seu nome: ");
+		
+
+	}
+
+}

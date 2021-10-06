@@ -1,0 +1,47 @@
+package application;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+//		Scanner sc = new Scanner(System.in);
+//		
+//		double randomNumber = 0.0;
+//		String randomName = "";
+//
+//		System.out.print("Digite um número: ");
+//		randomNumber = sc.nextDouble();
+//		
+//		System.out.println("Digite o seu nome: ");
+//		randomName = sc.nextLine();
+		
+//		double verifyDecimal = givesItBackDecimal(randomNumber, 2);
+		
+//		if (verifyDecimal <= 0.54) {
+//			Math.floor(randomNumber);
+//		}
+//		else if (verifyDecimal >= 0.55) {
+//			Math.round(randomNumber);
+//		}
+//		else {
+//			System.out.println("ERRO");
+//		}
+//		
+//		for (int i = 1; i <= randomNumber; i++) {
+//			System.out.println(randomName);
+//			System.out.println(randomNumber);
+//		}
+		
+		givesItBackDecimal(12.56, 2);
+
+	}
+
+	public static void givesItBackDecimal(double x, int n) {
+		double p = Math.pow(10.0, n);
+		int dec = (int) (x * p - ((int) x) * p);
+		System.out.println(dec / p);
+	}
+
+}
